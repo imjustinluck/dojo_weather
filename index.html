@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Weather!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav flex a sb">
+            <h1>Justin's Weather!</h1>
+            <ul>
+                <li><a onclick="alert('Loading your weather report!')" href="">Burbank</a></li>
+                <li><a onclick="alert('Loading your weather report!')" href="">Chicago</a></li>
+                <li><a onclick="alert('Loading your weather report!')" href="">Dallas</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="temp flex a sb">
+                <h2>Los Angeles</h2>
+                <div class="tempBox flex">
+                    <p>show temperature in:</p>
+                    <select autocomplete="off" onchange="convert()" name="temperature" id="temperature">
+                        <option value="c">C&#176</option>
+                        <option value="f">F&#176</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weather flex">
+                <div class="days">
+                    <h2>Today</h2>
+                    <img src="/some_rain.png" alt="rain">
+                    <p>some rain</p>
+                    <div class="hotCold flex sb">
+                        <h3 class="hot">23.9</h3>
+                        <h3 class="cold">18.3</h3>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2>Tomorrow</h2>
+                    <img src="/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="hotCold flex sb">
+                        <h3 class="hot">26.7</h3>
+                        <h3 class="cold">18.9</h3>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2>Wednesday</h2>
+                    <img src="/some_clouds.png" alt="clouds">
+                    <p>some clouds</p>
+                    <div class="hotCold flex sb">
+                        <h3 class="hot">20.6</h3>
+                        <h3 class="cold">16.1</h3>
+                    </div>
+                </div>
+                <div class="days">
+                    <h2>Thursday</h2>
+                    <img src="/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                    <div class="hotCold flex sb">
+                        <h3 class="hot">25.6</h3>
+                        <h3 class="cold">21.1</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="cookie flex sb a">
+        <img id="cook" src="/cookie.png" alt="cookie">
+        <div>
+            <h3>Stop! Cookie Time</h3>
+            <p>We just want to let you know that Justin is really awesome! Can't deny a man of that caliber.</p>
+        </div>
+        <button id="cookButt" onclick="document.querySelector('.cookie').remove()">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
